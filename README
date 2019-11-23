@@ -1,0 +1,11 @@
+Sven Schmidt
+11/23/2019
+
+Note: as said here, https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-21-rust-on-android.html,
+we have to use the FULL PATH, not relative paths, i.e.
+
+ln -s /home/svenschmidt75/Develop/Android/AndroidWithRust/rust/target/aarch64-linux-android/release/librust.so arm64/
+ln -s /home/svenschmidt75/Develop/Android/AndroidWithRust/rust/target/armv7-linux-androideabi/release/librust.so armeabi/
+ln -s /home/svenschmidt75/Develop/Android/AndroidWithRust/rust/target/i686-linux-android/release/librust.so x86/
+
+otherwise Android Studio will not include the librust.so's into the APK!!!
