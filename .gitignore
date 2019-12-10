@@ -66,3 +66,7 @@ fastlane/readme.md
 
 
 *.so
+
+rust/target/
+
+rust/Cargo.lock
